@@ -51,6 +51,11 @@ type TreeNode
 -- generics
 
 
+type Optional val
+    = Null
+    | Value val
+
+
 firstOrZero : List Int -> Int
 firstOrZero list =
     Maybe.withDefault 0 (List.head list)
