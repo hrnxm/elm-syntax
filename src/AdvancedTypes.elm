@@ -56,6 +56,12 @@ type Optional val
     | Value val
 
 
+
+-- type Maybe a
+--     = Just a
+--     | Nothing
+
+
 firstOrZero : List Int -> Int
 firstOrZero list =
     Maybe.withDefault 0 (List.head list)
